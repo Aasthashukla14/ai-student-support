@@ -1,0 +1,7 @@
+services:
+-type: web
+name:ai-student-support
+env:python
+pythonversion: 3.11
+buildcommand: pip install -r requirements.txt
+startcommand: gunicorn app:app
